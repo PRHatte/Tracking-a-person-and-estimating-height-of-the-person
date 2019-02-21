@@ -9,10 +9,10 @@ FLANN_INDEX_KDITREE=0
 flannParam=dict(algorithm=FLANN_INDEX_KDITREE,tree=5)
 flann=cv2.FlannBasedMatcher(flannParam,{})
 
-people_cascade = cv2.CascadeClassifier("C:/Users/prh071230/Downloads/haarcascade_upperbody.xml")
-face_cascade = cv2.CascadeClassifier("C:/Users/pxh170230/Downloads/haarcascade_frontalface_alt.xml")
-eye_cascade = cv2.CascadeClassifier("C:/Users/pxh170230/Downloads/haarcascade_eye.xml")
-LOGOImg=cv2.imread("C:/Users/pxb170230/Downloads/book.jpg",0)
+people_cascade = cv2.CascadeClassifier("C:/Users/prh070230/Downloads/haarcascade_upperbody.xml")
+face_cascade = cv2.CascadeClassifier("C:/Users/prh170230/Downloads/haarcascade_frontalface_alt.xml")
+eye_cascade = cv2.CascadeClassifier("C:/Users/prh170230/Downloads/haarcascade_eye.xml")
+LOGOImg=cv2.imread("C:/Users/prh170230/Downloads/book.jpg",0)
 trainKP,trainDesc=detector.detectAndCompute(LOGOImg,None)
 MIN_MATCH_COUNT=20
 cam=cv2.VideoCapture(0)
